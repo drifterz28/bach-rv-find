@@ -3,8 +3,10 @@ const http = require("http");
 const fetch = require("node-fetch");
 const nodemailer = require("nodemailer");
 
-const startDate = "2021-05-28";
-const endDate = "2021-05-29";
+const pass = process.env.PASS;
+const port = process.env.PORT || 5000;
+const startDate = process.env.START_DATE;
+const endDate = process.env.END_DATE;
 
 const headers = {
   headers: {
@@ -31,8 +33,7 @@ const headers = {
   credentials: "include",
 };
 
-const pass = process.env.PASS;
-const port = process.env.PORT || 5000;
+
 
 async function main() {
 
