@@ -1,0 +1,16 @@
+{
+  "name": "bach-rv-find",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon ./index.js",
+    "start": "node ./index.js",
+  },
+  "dependencies": {
+    "dotenv": "8.2.0",
+    "node-fetch": "2.6.1",
+    "node-static": "0.7.11",
+    "nodemailer": "6.5.0"
+  }
+}
